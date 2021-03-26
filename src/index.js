@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import AppReducer from './reducers';
-import registerServiceWorker from './registerServiceWorker';
+import * as serviceWorker from './serviceWorker';
 
 // Third-party declarations.
 import 'bootswatch/dist/flatly/bootstrap.min.css';
@@ -26,4 +26,4 @@ ReactDOM.render(
   document.getElementById('app'),
 );
 
-registerServiceWorker();
+serviceWorker.register();
